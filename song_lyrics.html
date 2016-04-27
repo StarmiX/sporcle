@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: Song Lyrics</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- b. -->
+
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["Trip Switch", "Seven | 7", "Gasoline", "Wake-Up Call | Wakeup Call | Wake Up Call", "Afraid", "Arabella","Migraine","Genghis Khan","X Gon' Give it to ya | X going to give it to you | X gon give it to ya | X gonna give it to ya","Lay It All on Me","Win Some, Lose Some | Win some lose some | Win some and lose some","Wires"];
+
+// d.
+var time_limit =  90; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload=setup()>
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="esports_pros.html">ESports Pros</a></li>
+            <li><a href="song_artists.html">Song Artists</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/lyric_note.png" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Name The Song Given the Lyrics</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" value="PLAY GAME" onclick=start()>
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter Song name:</h3>
+            
+            <!-- k.  -->
+            <input id="guess" type="text" onkeyup=check()>
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+<section>
+
+    <!-- l. -->
+<table>
+<tr>
+<td><p>Rubbing shoulders with some unknown lovers <span id="answer0"></span></p></td>
+<td><p>7,6,5,4,3,2,1, everybody got a name, everybody got a number<span id="answer1"></span></p></td>
+<td><p>Are you insane like me? Been in pain like me?<span id="answer2"></span></p></td>
+<td><p>Met when we were young, I told you where to go<span id="answer3"></span></p></td>
+</tr>
+<tr>
+<td><p>I'm afraid, somebody else might take my place<span id="answer4"></span></p></td>
+<td><p>Arabella's got some interstellar-gator skin boots<span id="answer5"></span></p></td>
+<td><p>Waging my wars behind my face and above my throat<span id="answer6"></span></p></td>
+<td><p>The lights, they glow. Like I just lost the World War<span id="answer7"></span></td>
+</tr>
+<tr>
+<td><p>Open up the door, it's real. Wit the non-stop, pop pop and stainless steel<span id="answer8"></span></p></td>
+<td><p>All alone as you look through the door. Nothing left to see<span id="answer9"></span></p></td>
+<td><p>If there's bigger plans then someone read them out to me.<span id="answer10"></span></p></td>
+<td><p>If he said help me kill the president, I'd say he needs medicine<span id="answer11"></span></p></td>
+</tr>
+</table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Steven L.</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>

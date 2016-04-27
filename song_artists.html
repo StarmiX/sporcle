@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: Song Artists</title>
+<link rel="stylesheet" href="css/main.css">
+<!-- b. -->
+
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["Nothing But Thieves", "Rainbow Kitten Surprise", "Halsey", "TV on the Radio", "The Neighbourhood", "Arctic Monkeys","Twenty One Pilots","Miike Snow","Lilly Wood and the Prick","Ed Sheeran","You Me At Six","Tove Lo"];
+
+// d.
+var time_limit =  120; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload=setup()>
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="esports_pros.html">ESports Pros</a></li>
+            <li><a href="song_lyrics.html">Song Lyrics</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/music_note.png" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Who Wrote These Songs</h2>
+        <h3>Formatted As:</h3>
+        <h3>Song Name - Album Name</h3>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" value="PLAY GAME" onclick=start()>
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter Artist name:</h3>
+            
+            <!-- k.  -->
+            <input id="guess" type="text" onkeyup=check()>
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+<section>
+
+    <!-- l. -->
+<table>
+<tr>
+<td><p>Itch - Nothing But Thieves <span id="answer0"></span></p></td>
+<td><p>Seven - Seven + Mary<span id="answer1"></span></p></td>
+<td><p>Gasoline - BADLANDS<span id="answer2"></span></p></td>
+<td><p>Mercy - Mercy<span id="answer3"></span></p></td>
+</tr>
+<tr>
+<td><p>Flawless - I Love You<span id="answer4"></span></p></td>
+<td><p>Arabella - AM<span id="answer5"></span></p></td>
+<td><p>Migraine - Vessel<span id="answer6"></span></p></td>
+<td><p>Genghis Khan - Miike Snow<span id="answer7"></span></td>
+</tr>
+<tr>
+<td><p>Prayer in C - Prayer in C<span id="answer8"></span></p></td>
+<td><p>Runaway - X<span id="answer9"></span></p></td>
+<td><p>Carpe Diem - Cavalier Youth<span id="answer10"></span></p></td>
+<td><p>Habits - Queen of the Clouds<span id="answer11"></span></p></td>
+</tr>
+</table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Steven L.</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
